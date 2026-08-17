@@ -1,0 +1,53 @@
+.site-footer {
+  margin-top: 100px;
+  border-top: 1px solid var(--glass-border);
+  padding-top: 64px;
+  background: linear-gradient(0deg, var(--bg-void), transparent);
+}
+
+.footer-inner {
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 40px;
+  padding-bottom: 50px;
+}
+
+.login-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.login-brand-name {
+  font: 700 20px 'Space Mono', monospace;
+  letter-spacing: 0.16em;
+  color: #fff;
+}
+
+.footer-brand p {
+  margin-top: 16px;
+  max-width: 320px;
+  font-size: 14px;
+}
+
+.footer-col ul {
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-col li {
+  font-size: 14px;
+  color: var(--ink-cream-dim);
+}
+
+.footer-bottom {
+  border-top: 1px solid var(--glass-border);
+  padding: 22px 64px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12.5px;
+  color: var(--ink-muted);
+  font-family: var(--font-mono);
+}

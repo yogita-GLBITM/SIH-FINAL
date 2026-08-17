@@ -1,0 +1,92 @@
+.team-dashboard {
+  min-height: 100vh;
+  padding: 40px 20px;
+  background: #f5f5f5;
+  color: #111;
+  font-family: Arial, sans-serif;
+}
+
+.team-dashboard h1 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.dashboard-message {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+.no-sos {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.sos-card {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 25px;
+  background: white;
+  border: 2px solid red;
+  border-radius: 16px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.sos-card h2 {
+  color: red;
+  margin-top: 0;
+}
+
+.sos-card p {
+  line-height: 1.6;
+}
+
+.location-box {
+  margin: 20px 0;
+  padding: 15px;
+  background: #f7f7f7;
+  border-radius: 10px;
+}
+
+.status {
+  font-weight: bold;
+  color: red;
+}
+
+.team-buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.team-buttons button {
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background: #111;
+  color: white;
+  font-size: 14px;
+}
+
+.team-buttons button:hover {
+  opacity: 0.8;
+}
+
+.dashboard-error {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #fff;
+  border: 2px solid red;
+  border-radius: 12px;
+  text-align: center;
+  color: red;
+}

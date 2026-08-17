@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1786966370602,
+    "userId": 1,
+    "teamMemberId": 1,
+    "latitude": 28.6139,
+    "longitude": 77.209,
+    "emergencyType": "Test Emergency",
+    "status": "ACTIVE",
+    "createdAt": "2026-08-17T11:32:50.602Z",
+    "acceptedAt": null,
+    "acceptedBy": null
+  },
+  {
+    "id": 1786967179103,
+    "userId": 1,
+    "teamMemberId": 1,
+    "latitude": 28.46921575,
+    "longitude": 77.4812,
+    "emergencyType": "Travel Emergency",
+    "status": "ACTIVE",
+    "createdAt": "2026-08-17T11:46:19.103Z",
+    "acceptedAt": null,
+    "acceptedBy": null
+  },
+  {
+    "id": 1786971045613,
+    "userId": 1,
+    "teamMemberId": 1,
+    "latitude": 28.468860797439223,
+    "longitude": 77.48074915347892,
+    "emergencyType": "Travel Emergency",
+    "status": "ACCEPTED",
+    "createdAt": "2026-08-17T12:50:45.613Z",
+    "acceptedAt": "2026-08-17T12:52:07.437Z",
+    "acceptedBy": 1
+  }
+]
