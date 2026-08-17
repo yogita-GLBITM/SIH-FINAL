@@ -15,4 +15,7 @@ public class Destination {
     private Double latitude;
     private Double longitude;
     private String category;
+    private String permitRequired;
+    @Column(columnDefinition = "TEXT")
+    private String safetyNote;
 }
