@@ -1,0 +1,475 @@
+/* AVYSURE v3 — single source of truth (v1/v2 duplicate rules removed) */
+
+.explore-page{background:#f7f1e7;color:#16332e;overflow:hidden}
+.section-title{max-width:760px;margin-bottom:45px}
+.section-title>span{font:10px 'Space Mono';letter-spacing:.18em;color:#b1663f}
+.section-title h2{font:58px Georgia,serif;font-weight:500;line-height:1.04;margin:14px 0}
+.section-title h2 em{font-style:italic;color:var(--magenta)}
+.section-title p{color:#66756e;max-width:600px;line-height:1.75}
+
+/* ---------------- hero ---------------- */
+.hero-seven{height:850px;position:relative;background:#102c29;color:#fff;overflow:hidden}
+.hero-seven:before{content:'';position:absolute;inset:0;
+  background:
+    radial-gradient(circle at 82% 12%,rgba(56,189,248,.20),transparent 32%),
+    radial-gradient(circle at 8% 85%,rgba(255,93,162,.16),transparent 38%),
+    linear-gradient(90deg,#071a17ee 0%,#071a179e 43%,#071a171c 100%),
+    url('https://images.unsplash.com/photo-1502786129293-79981df4e689?auto=format&fit=crop&w=2200&q=90') center/cover}
+.hero-text{position:absolute;z-index:2;left:8%;top:27%;max-width:650px}
+.hero-text>span{font:10px 'Space Mono';letter-spacing:.22em;color:var(--thread-gold)}
+.hero-text h1{font:78px Georgia,serif;font-weight:500;line-height:.9;margin:18px 0}
+.hero-text h1 i{font-style:italic;background:linear-gradient(100deg,var(--thread-gold),var(--sunrise),var(--magenta));-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-text p{color:#d0ddd7;max-width:560px;line-height:1.8}
+.hero-cta{margin-top:25px;display:inline-flex;gap:55px;align-items:center;background:linear-gradient(110deg,var(--thread-gold),var(--sunrise));color:#132d29;padding:15px 18px;border-radius:100px;font:800 10px 'Space Mono';letter-spacing:.12em;box-shadow:0 18px 40px rgba(255,138,92,.28)}
+.hero-cta b{font-size:16px}
+.hero-map-label{position:absolute;right:7%;top:110px;z-index:3;font:9px 'Space Mono';letter-spacing:.18em;color:#a9bcb5}
+.hero-map-label b{color:var(--thread-gold);margin-left:12px}
+.hero-strip{position:absolute;z-index:3;bottom:0;left:0;right:0;display:grid;grid-template-columns:repeat(8,1fr);gap:2px}
+.hero-strip button{height:132px;border:0;padding:0;position:relative;overflow:hidden;background:#183a35;color:#fff;text-align:left;cursor:pointer}
+.hero-strip img{width:100%;height:100%;object-fit:cover;opacity:.6;transition:.6s}
+.hero-strip button:hover img,.hero-strip button.active img{opacity:1;transform:scale(1.07)}
+.hero-strip button:after{content:'';position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.82),transparent 60%)}
+.hero-strip button.active:before{content:'';position:absolute;left:0;right:0;bottom:0;height:3px;background:linear-gradient(90deg,var(--thread-gold),var(--magenta));z-index:2}
+.hero-strip span{position:absolute;z-index:2;bottom:14px;left:12px;font-size:11px;letter-spacing:.02em}
+
+/* ---------------- shared tool sections ---------------- */
+.tool-section{padding:115px 7%;position:relative}
+.itinerary-section{background:#f7f1e7}
+.itinerary-card{display:grid;grid-template-columns:1.1fr .9fr;min-height:480px;border-radius:var(--radius-lg);overflow:hidden;background:#fff;box-shadow:0 25px 80px #28231a17}
+.destination-stage{position:relative;overflow:hidden;background:#0e2622}
+.destination-stage img{width:100%;height:100%;object-fit:cover;transition:1.2s;display:block}
+.itinerary-card:hover .destination-stage img{transform:scale(1.035)}
+.stage-overlay{position:absolute;inset:0;padding:38px;display:flex;flex-direction:column;justify-content:end;color:#fff;background:linear-gradient(0deg,#000c,transparent 60%)}
+.stage-overlay span{font:9px 'Space Mono';color:var(--thread-gold);letter-spacing:.18em}
+.stage-overlay h3{font:45px Georgia,serif;margin:10px 0 4px}
+.planner-fields{padding:40px;display:grid;gap:20px}
+.planner-fields label{font:9px 'Space Mono';color:#65736d;display:grid;gap:8px;letter-spacing:.1em}
+.planner-fields select{height:44px;border:1px solid #d9ded8;background:#faf8f2;padding:0 12px;border-radius:9px}
+.stepper{display:flex;height:44px;border:1px solid #d9ded8;align-items:center;justify-content:space-between;border-radius:9px}
+.stepper button{width:44px;height:100%;border:0;background:none;font-size:18px}
+.taste-pills{display:flex;gap:6px;flex-wrap:wrap}
+.taste-pills button{border:1px solid #d9ded8;background:#fff;padding:10px 12px;font-size:10px;border-radius:100px}
+.taste-pills button.on{background:#163b35;color:#fff;border-color:#163b35}
+.generate-btn{height:50px;background:linear-gradient(110deg,#163b35,#1f5148);color:#fff;border:0;padding:0 16px;display:flex;justify-content:space-between;align-items:center;font:10px 'Space Mono';border-radius:11px;letter-spacing:.1em}
+.generate-btn span{color:var(--thread-gold);font-size:18px}
+
+/* ---------------- weather (animated) ---------------- */
+.weather-section{padding:115px 7%;background:linear-gradient(165deg,#0d2b26,#153b36 55%,#0d2b26);color:#eef2e9;position:relative;overflow:hidden}
+.weather-section .section-title p{color:#aebdb6}
+.weather-section .section-title>span{color:var(--thread-gold)}
+.weather-card{min-height:390px;border:1px solid #ffffff22;border-radius:var(--radius-lg);background:radial-gradient(circle at 68% 40%,rgba(255,255,255,.06),transparent 45%),#ffffff09;position:relative;overflow:hidden;padding:48px;isolation:isolate}
+.weather-anim{position:absolute;inset:0;z-index:0;pointer-events:none;overflow:hidden;border-radius:var(--radius-lg)}
+.weather-big{position:relative;z-index:2}
+.weather-big span{font:9px 'Space Mono';color:var(--thread-gold);letter-spacing:.14em}
+.weather-big strong{display:block;font:110px Georgia,serif;font-weight:400;line-height:.95;margin:16px 0}
+.weather-big p{color:#c4d3cc;display:flex;align-items:center;gap:10px;font-size:14px}
+.weather-big .w-icon{font-size:22px}
+.weather-orbit{position:absolute;right:16%;top:24%;width:190px;height:190px;border-radius:50%;border:1px dashed rgba(255,255,255,.25);display:grid;place-content:center;text-align:center;font-size:45px;z-index:1;animation:spin 22s linear infinite}
+.weather-orbit small{font:8px 'Space Mono';color:#aabcb5;letter-spacing:.14em}
+.weather-bars{position:relative;z-index:2;left:0;right:0;bottom:0;display:flex;align-items:end;gap:25px;height:120px;margin-top:26px}
+.weather-bars div{flex:1;display:grid;gap:8px;text-align:center;max-width:70px}
+.weather-bars span{font:8px 'Space Mono';color:#8ea79e}
+.weather-bars b{font-size:12px}
+.weather-bars i{display:block;background:linear-gradient(var(--thread-gold),var(--teal-bright));border-radius:8px 8px 0 0;animation:bar 1.2s ease both;font-style:normal}
+.weather-state-strip{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:30px;position:relative;z-index:2}
+.weather-state-strip button{border:1px solid rgba(255,255,255,.16);background:rgba(255,255,255,.05);color:#c3d2cb;padding:9px 14px;border-radius:100px;font-size:10.5px;letter-spacing:.03em;display:flex;align-items:center;gap:8px}
+.weather-state-strip button .dot{width:7px;height:7px;border-radius:50%;display:inline-block}
+.weather-state-strip button.on{background:#fff;color:#122622;border-color:#fff}
+
+/* weather animation kinds --------------------------------------------- */
+.weather-anim--sun .w-sun{position:absolute;top:-70px;right:-40px;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(247,201,72,.55),rgba(247,201,72,0) 70%);animation:sunPulse 5s ease-in-out infinite}
+.weather-anim--sun .w-ray{position:absolute;top:-30px;right:60px;width:420px;height:420px;background:conic-gradient(from 0deg,rgba(247,201,72,.16),transparent 12%,transparent 88%,rgba(247,201,72,.16));animation:spin 30s linear infinite}
+.weather-anim--cloud .w-cloud,.weather-anim--rain .w-cloud,.weather-anim--storm .w-cloud{position:absolute;width:220px;height:70px;border-radius:100px;background:rgba(255,255,255,.10);filter:blur(2px)}
+.w-cloud.c1{top:12%;left:-10%;animation:driftCloud 26s linear infinite}
+.w-cloud.c2{top:34%;left:-24%;width:160px;height:54px;animation:driftCloud 34s linear infinite;animation-delay:-8s;opacity:.7}
+.w-cloud.c3{top:4%;left:-40%;width:120px;height:44px;animation:driftCloud 20s linear infinite;animation-delay:-4s;opacity:.5}
+.weather-anim--rain .w-rain,.weather-anim--storm .w-rain{position:absolute;inset:-20% -5% -5%;background-image:repeating-linear-gradient(115deg,transparent 0 10px,rgba(122,213,244,.5) 11px 13px,transparent 14px 24px);background-size:140% 140%;animation:rainFall .55s linear infinite}
+.weather-anim--storm .w-flash{position:absolute;inset:0;background:#fff;opacity:0;animation:flash 6s ease-in-out infinite}
+.weather-anim--snow .w-flake{position:absolute;top:-10%;border-radius:50%;background:#fff;opacity:.85;animation:snowFall linear infinite}
+
+@keyframes sunPulse{0%,100%{transform:scale(1);opacity:.9}50%{transform:scale(1.12);opacity:1}}
+@keyframes driftCloud{from{transform:translateX(0)}to{transform:translateX(160%)}}
+@keyframes rainFall{from{background-position:0 0}to{background-position:-40px 90px}}
+@keyframes flash{0%,92%,100%{opacity:0}94%{opacity:.55}96%{opacity:.05}98%{opacity:.35}}
+@keyframes snowFall{from{transform:translateY(-10%) translateX(0)}to{transform:translateY(420px) translateX(18px)}}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes bar{from{height:0}}
+
+/* ---------------- expense ---------------- */
+.expense-section{background:#f0e5d7}
+.expense-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:20px}
+.budget-card,.ledger{background:#fff;border-radius:var(--radius-lg);padding:35px;box-shadow:0 20px 60px #32281914}
+.budget-card>span{font:9px 'Space Mono';color:#9a7560;letter-spacing:.1em}
+.budget-card>strong{display:block;font:52px Georgia,serif;margin:20px 0}
+.budget-progress{height:10px;background:#ece4d8;border-radius:10px;overflow:hidden}
+.budget-progress i{display:block;width:58%;height:100%;background:linear-gradient(90deg,var(--thread-gold),var(--magenta));border-radius:10px}
+.budget-card small{display:block;margin-top:14px;color:#7a857e}
+.ledger-row{height:65px;border-bottom:1px solid #eee4d8;display:grid;grid-template-columns:42px 1fr auto;align-items:center;gap:10px}
+.ledger-row i{width:32px;height:32px;border-radius:50%;background:#f5eadb;display:grid;place-items:center;color:#b55e3e;font-style:normal}
+.ledger-row span{font-size:12px}
+.ledger-row b{font:14px 'Space Mono'}
+.add-expense{margin-top:18px;width:100%;height:44px;border:1px dashed #c8b9a5;background:#fbf7f0;color:#a45f43;font-size:10px;letter-spacing:.12em;border-radius:9px}
+
+/* ---------------- footer ---------------- */
+.footer{padding:52px 7% 40px;background:#07120f;color:#91a49d;display:flex;align-items:center;justify-content:space-between;font-size:10px;gap:20px;flex-wrap:wrap}
+.footer-brandmark{display:flex;align-items:center;gap:10px}
+.footer-brandmark b{font:700 15px 'Space Mono';letter-spacing:.16em;color:#fff}
+.footer span:last-child{color:#62746d}
+/* =========================================
+   EXPENSE TRACKER - POLISHED UI
+========================================= */
+
+.expense-section {
+  padding: 90px 0;
+}
+
+.expense-grid {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 28px;
+  align-items: stretch;
+}
+
+/* ---------- BUDGET CARD ---------- */
+
+.budget-card {
+  padding: 30px;
+  border-radius: 22px;
+  min-height: 260px;
+  box-sizing: border-box;
+}
+
+.budget-card > span {
+  display: block;
+  font-size: 11px;
+  letter-spacing: 2px;
+  opacity: 0.65;
+  margin-bottom: 12px;
+}
+
+.budget-card > input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 13px 15px;
+  border-radius: 10px;
+  border: 1px solid rgba(120, 90, 50, 0.2);
+  background: rgba(255, 255, 255, 0.55);
+  color: inherit;
+  font-size: 16px;
+  outline: none;
+}
+
+.budget-card > input:focus {
+  border-color: var(--thread-gold);
+  box-shadow: 0 0 0 3px rgba(200, 150, 60, 0.1);
+}
+
+.budget-card > strong {
+  font-family: var(--font-mono);
+  font-size: 34px;
+  font-weight: 700;
+  margin-top: 25px !important;
+}
+
+/* Progress bar */
+
+.budget-progress {
+  height: 7px;
+  width: 100%;
+  margin-top: 22px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: rgba(20, 40, 35, 0.1);
+}
+
+.budget-progress i {
+  display: block;
+  height: 100%;
+  border-radius: 20px;
+  background: var(--sunrise);
+  transition: width 0.4s ease;
+}
+
+
+/* ---------- LEDGER ---------- */
+
+.ledger {
+  padding: 28px;
+  border-radius: 22px;
+  min-width: 0;
+}
+
+
+/* ---------- ADD FORM ---------- */
+
+.expense-form {
+  display: grid;
+  grid-template-columns: minmax(180px, 1.5fr) 140px 120px 90px;
+  gap: 10px;
+  width: 100%;
+}
+
+.expense-form input,
+.expense-form select {
+  width: 100%;
+  height: 46px;
+  box-sizing: border-box;
+
+  padding: 0 13px;
+
+  border-radius: 10px;
+  border: 1px solid rgba(120, 90, 50, 0.2);
+
+  background: rgba(255, 255, 255, 0.6);
+
+  color: #18342f;
+  font-size: 13px;
+
+  outline: none;
+}
+
+.expense-form input::placeholder {
+  color: #777;
+}
+
+.expense-form input:focus,
+.expense-form select:focus {
+  border-color: var(--thread-gold);
+  box-shadow: 0 0 0 3px rgba(200, 150, 60, 0.1);
+}
+
+
+/* ADD BUTTON */
+
+.expense-form .add-expense {
+  height: 46px;
+  padding: 0 18px;
+
+  border: none;
+  border-radius: 10px;
+
+  background: var(--thread-gold);
+  color: #18342f;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+  cursor: pointer;
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.expense-form .add-expense:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ---------- EXPENSE LIST ---------- */
+
+.expense-list {
+  margin-top: 24px !important;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8px;
+
+  max-height: 380px;
+  overflow-y: auto;
+
+  padding-right: 5px;
+}
+
+
+/* Individual expense */
+
+.ledger-row {
+  display: flex;
+  align-items: center;
+
+  min-height: 62px;
+
+  padding: 10px 12px;
+
+  border-bottom: 1px solid rgba(120, 90, 50, 0.12);
+
+  gap: 14px;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.ledger-row:hover {
+  background: rgba(255, 255, 255, 0.35);
+  border-radius: 12px;
+}
+
+
+/* Icon */
+
+.ledger-row > i {
+  width: 40px;
+  height: 40px;
+
+  flex-shrink: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: rgba(200, 160, 100, 0.18);
+
+  font-style: normal;
+  font-size: 18px;
+}
+
+
+/* Name */
+
+.ledger-row > span {
+  flex: 1;
+
+  color: #18342f;
+
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.ledger-row > span small {
+  margin-top: 3px;
+  color: #7b817d;
+}
+
+
+/* Amount */
+
+.ledger-row > b {
+  font-family: var(--font-mono);
+
+  font-size: 14px;
+
+  color: #9c6418;
+
+  white-space: nowrap;
+}
+
+
+/* Delete button */
+
+.ledger-row > button {
+  width: 30px;
+  height: 30px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 8px;
+
+  background: transparent;
+
+  color: #8b8580;
+
+  font-size: 15px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease;
+}
+
+.ledger-row > button:hover {
+  background: rgba(190, 60, 50, 0.1);
+  color: #c23d36;
+}
+
+
+/* Empty state */
+
+.expense-list > p {
+  text-align: center;
+
+  padding: 35px 10px;
+
+  color: #888;
+
+  font-size: 14px;
+}
+
+
+/* ---------- SCROLLBAR ---------- */
+
+.expense-list::-webkit-scrollbar {
+  width: 5px;
+}
+
+.expense-list::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.expense-list::-webkit-scrollbar-thumb {
+  background: rgba(120, 90, 50, 0.25);
+  border-radius: 10px;
+}
+
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width: 900px) {
+
+  .expense-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .expense-form {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .expense-form input:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .expense-form .add-expense {
+    width: 100%;
+  }
+
+}
+
+
+@media (max-width: 550px) {
+
+  .expense-section {
+    padding: 60px 0;
+  }
+
+  .budget-card,
+  .ledger {
+    padding: 20px;
+  }
+
+  .expense-form {
+    grid-template-columns: 1fr;
+  }
+
+  .expense-form input:first-child {
+    grid-column: auto;
+  }
+
+  .ledger-row {
+    gap: 9px;
+  }
+
+  .ledger-row > b {
+    font-size: 12px;
+  }
+
+}

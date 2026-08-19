@@ -1,0 +1,9 @@
+package com.touristsafety.touristsafety.repository;
+
+import com.touristsafety.touristsafety.entity.Expense;
+import org.springframework.data.jpa.repository.JpaRepository;
+import java.util.List;
+
+public interface ExpenseRepository extends JpaRepository<Expense, Long> {
+    List<Expense> findByTouristId(Long touristId);
+}

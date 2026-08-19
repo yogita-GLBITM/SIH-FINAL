@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap');
+
+/* ---- AVYSURE colour system -----------------------------------------
+   A woven-textile palette: deep teal-green base + five warm/cool thread
+   colours (gold, sunrise, magenta, indigo, teal), so the brand reads as
+   colourful Northeast-India craft rather than a single green tint. */
+:root{
+  --bg-void:#081712;
+  --bg-deep:#0b2119;
+  --bg-rise:#123a30;
+  --ink-cream:#fbf3e6;
+  --ink-cream-dim:#cfe0d8;
+  --ink-muted:#8fa59f;
+  --glass-bg:rgba(251,243,230,0.06);
+  --glass-border:rgba(251,243,230,0.14);
+  --thread-gold:#f7c948;
+  --thread-red:#ff5d5d;
+  --sunrise:#ff8a5c;
+  --teal-bright:#2bd4b0;
+  --magenta:#ff5da2;
+  --indigo:#7c6cff;
+  --moss:#8bd15a;
+  --radius-sm:10px;
+  --radius-md:18px;
+  --radius-lg:28px;
+  --font-display:Georgia,'Times New Roman',serif;
+  --font-body:'Manrope',Arial,sans-serif;
+  --font-mono:'Space Mono',monospace;
+  --ease-soft:cubic-bezier(.16,1,.3,1);
+}
+
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-width:1280px;font-family:Manrope,Arial,sans-serif}button,input,select{font-family:inherit}button{cursor:pointer}a{text-decoration:none;color:inherit}p{line-height:1.6}.glass-login{backdrop-filter:blur(20px)}
+.avysure-logo{display:block;flex-shrink:0}
