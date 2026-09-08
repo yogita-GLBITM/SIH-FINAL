@@ -12,7 +12,7 @@ npm run dev
 - `src/components/Login` — cinematic landing/login form
 - `src/components/Navbar` — profile information dropdown
 - `src/pages/ExplorePage.jsx` — main experience
-- `src/data/states.js` — Northeast India + hidden gem content/image URLs
+- `src/data/states.js` — Northeast India(assam,manipur,ap,anurachal pardesh) + hidden gem content/image URLs
 - `src/pages/explore.css` — main visual system
 
 ## Backend hand-off
